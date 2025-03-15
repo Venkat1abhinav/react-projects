@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Chef Hat -->
+    <path d="M60 60 C40 30, 80 20, 100 40 C120 20, 160 30, 140 60" fill="none"/>
+    <circle cx="100" cy="80" r="40" fill="none"/>
+    
+    <!-- Robot Face -->
+    <rect x="70" y="80" width="60" height="60" rx="10" fill="none"/>
+    <circle cx="85" cy="100" r="5"/>
+    <circle cx="115" cy="100" r="5"/>
+    <path d="M85 120 Q100 130, 115 120"/>
+    
+    <!-- Cooking Utensil -->
+    <line x1="140" y1="130" x2="160" y2="150"/>
+    <circle cx="160" cy="150" r="5"/>
+</svg>

@@ -1,0 +1,322 @@
+
+/*General Css Default i Guess*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito','Poppins' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  color: #0C0A00;
+  background-color: wheat;
+}
+
+/*Css for the Header
+ - General Header Css
+ - logo css
+ - Title css
+*/
+
+header {
+  background-color: white;
+  color:  #0C0A00 ;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+
+.logo-img {
+  width: 85px;
+  height: 85px;
+}
+
+
+/*Css for Main Section as Follows
+ - This section is dived into Three Parts and sub parts as follows
+  1. General Main Css
+  2. Form Css
+  3. Content Css : contains List of items
+  4. Recipe Submission Css 
+  5. Actual Recipie Css
+*/
+
+/*General Main Css*/
+main {
+  margin-top: 40px;
+  display: block;
+}
+
+/*
+2. Form Css
+  - Input Css
+  - Button Css
+*/
+main > form {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 200px;
+}
+
+main > form > input {
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fbfbfb;
+  border: 2px solid transparent;
+  height: 20px;
+  width: 300px;
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+}
+
+main > form > button {
+  background-color: #f4c7a8;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all cubic-bezier(10);
+}
+
+main > form > button:hover {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: black;
+}
+
+main > form button:focus {
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+
+/*
+  3. Content Css : contains List of items
+     - Content List Css
+     - Button Css
+*/
+
+
+.content  {
+  display: block;
+  justify-content: center; /* Centers horizontally *//* Centers vertically */
+  width: 600px;
+  margin-left:20%;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.content ul {
+  padding-top: 10px;
+  padding-left: 30px;
+  list-style-type: square;
+  display: grid;
+  grid-template-rows: max-content;
+  gap: 5px;
+}
+
+.content-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+
+.content-list > button{
+  background-color: #550404;
+  color: rgb(232, 155, 155);
+  border-radius: 5px;
+  border: none;
+  transition: all ease-in-out 5ms;
+}
+
+.content-list > button:hover {
+  transform: scale(1.23);
+}
+
+.content-list > button:active {
+  border: solid;
+  border-radius: 0px;
+
+
+
+}
+
+/*
+   4. Recipe Submission Css 
+    - Get Recipe General
+    - Get Recipe Paragraph
+    - Get Recipe Button
+     - Active
+     - Hover
+     - Before
+     - After
+*/
+
+.get-recipie {
+  background: linear-gradient(135deg, #f4c28e,#f4c7a8,#f4c28e);/* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurred glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  color: seashell;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 50px;
+}
+
+
+.get-recipie span {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.get-recipie button {
+  background: white;
+  color: goldenrod;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  align-content: center;
+  align-self: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 1.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.get-recipie > button:active {
+  background-color: #f4c28e;
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+.get-recipie > button {
+  position: relative;
+  border: 0;
+}
+
+.get-recipie > button:after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  height: 2px;
+  content: "";
+  display: block;
+  background: burlywood;
+  transition: all 0.5s;
+}
+
+.get-recipie > button:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 2px;
+  content: "";
+  display: block;
+  background: burlywood;
+  transition: all 0.5s;
+}
+
+.get-recipie > button:hover:after {
+  left: 0;
+  transition: all 0.5s;
+}
+
+.get-recipie > button:hover:before {
+  right: 0;
+  transition: all 0.5s;
+}
+
+/* Loader animation */
+.get-recipie .loader {
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  align-items: center;
+  vertical-align: middle;
+  border: 2px solid goldenrod;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Disabled button (during loading) */
+.get-recipie button.loading {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Recipe Css*/
+
+.recipe-box {
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  background-color: grey;
+  margin-bottom: 35px;
+  backdrop-filter: blur();
+  overflow: hidden;
+  justify-content: left;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
