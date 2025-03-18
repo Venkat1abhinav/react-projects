@@ -97,12 +97,13 @@ main > form > button {
   border-radius: 30px;
   font-size: 1.1rem;
   font-weight: bold;
-  transition: all cubic-bezier(10);
+  transition:   all ease-out 4ms;
 }
 
 main > form > button:hover {
-  border: 2px solid #000;
-  background-color: transparent;
+  transform: perspective(30);
+  border: 2px solid #464040;
+  background-color: wheat;
   color: black;
 }
 
